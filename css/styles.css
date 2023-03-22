@@ -1,0 +1,136 @@
+:root {
+  --accent-color: rgba(188, 26, 26, 0.5);
+  --basic-bgc: #100f0f;
+  --basic-text-color: #f3f3f3;
+  --title-color: #f3f3f3;
+  --transition-values: 300ms cubic-bezier(ease-in-out);
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid tomato;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/**--------HEADER----------*/
+
+.header {
+  background-image: linear-gradient(
+    256.51deg,
+    rgba(111, 102, 102, 0.9) 26.96%,
+    rgba(16, 15, 15, 0.9) 79.08%,
+    rgba(16, 15, 15, 0.9) 79.08%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.logo {
+  margin-right: 228px;
+}
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+}
+
+.header-nav-link {
+  display: block;
+  padding-top: 31px;
+  padding-bottom: 30px;
+
+  color: var(--basic-text-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  transition: color var(--transition-values);
+}
+.header-nav-link:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+.header-btn {
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid #f3f3f3;
+  border-radius: 16px;
+
+  background-color: transparent;
+  color: var(--basic-text-color);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  transition: border-color var(--transition-values),
+    color var(--transition-values);
+}
+
+.header-btn:is(:hover, :focus) {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+/**-------- HERO---------- */
