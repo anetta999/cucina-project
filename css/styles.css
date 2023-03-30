@@ -285,3 +285,29 @@ body {
 }
 .bottom-btn {
 }
+
+/**-------- RECIPES--------  */
+
+.recipes {
+  background-color: var(--basic-bgc);
+}
+.video-list {
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+}
+.video-list-item {
+}
+
+.video {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.video-list-title {
+  text-align: center;
+  color: var(--title-color);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: calc(39 / 32);
+}
